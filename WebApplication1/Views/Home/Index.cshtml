@@ -1,0 +1,90 @@
+﻿@{
+    ViewBag.Title = "Inicio";
+}
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="~/Imagenes/133912944.jpg" alt="ASP.NET" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    Un lugar céntrico para tu empresa
+                    <a class="btn btn-default" @Html.ActionLink("Reservar", "Contact", "Home")
+                        
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/Imagenes/134236235.jpg" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    Disfruta de las comodidades de nuestro Hostal
+                    <a class="btn btn-default" @Html.ActionLink("Reservar", "Contact", "Home")
+                        
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/Imagenes/134236293.jpg" alt="Microsoft Azure" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    Espacio intímo y cómodo para tus trabajadores
+                    <a class="btn btn-default" @Html.ActionLink("Reservar", "Contact", "Home")
+                       
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+    </a>
+</div>
+
+<div class="row">
+    <div class="col-md-3">
+        <h2>Empresas</h2>
+        <ul>
+            <li>Reserva junto a nosotros</li>
+            <li><a asp-action="Contact">Reserva</a></li>
+            <li><a href="#!">Listado de empleados Formato</a></li>
+        </ul>
+    </div>
+    <div class="col-md-3">
+        <h2>Huéspedes</h2>
+        <ul>
+            <li><a href="#!">Consulta por tu habitación</a></li>
+            <li><a href="#!">Reservación restaurante</a></li>
+            <li><a href="#!">Minuta semanal</a></li>
+
+        </ul>
+    </div>
+    <div class="col-md-3">
+        <h2>Proveedores</h2>
+        <ul>
+            <li><a href="#!">Ingresa aquí</a></li>
+            <li><a href="#!">Consulta datos</a></li>
+
+        </ul>
+    </div>
+    <div class="col-md-3">
+        <h2>Quiénes somos</h2>
+        <ul>
+            <li><a asp-action="About">Misión</a></li>
+            <li><a asp-action="About">Visión</a></li>
+            <li><a asp-action="About">Nuestra historia</a></li>
+        </ul>
+    </div>
+</div>
